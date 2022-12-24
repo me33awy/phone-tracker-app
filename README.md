@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# **Phone Tracking Application:**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_phone tracking application provided a solution to a problem that occurs continuously and often with many people._
 
-## Available Scripts
+## Problem Definition:
 
-In the project directory, you can run:
+Some features of this app are
 
-### `npm start`
+1. It is an offline app, so it doesn’t require an internet connection.
+2. It is user-friendly and easy to use.
+3. It provides solutions to common problems faced by people daily.
+4. It is a fast and easy solution to problems.
+5. It is available for free download.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Security and safety:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Our app doesn’t need high permissions like many apps that introduce its service as safe services and respect personal privacy
 
-### `npm test`
+### Background:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Nowadays, the usage of mobile has become a vital part of the day-to-day activities of people. We can refer to the current time as the era of Smartphones. Suppressing all other traditional communication purposes, smartphones are now at the peak of popularity in their usage of accessing the internet which includes mail access, social networking, mobile shopping, mobile banking, etc.
 
-### `npm run build`
+### Tools:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### _For User-Interface:_
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. AdobeXD
+2. Figma
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### _For Andriod App_
+1. Android Studio
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### _For Website_
+1. HTML
+2. CSS
+3. JavaScript
+4. ReactJS
+5. PHP
+6. Laravel
+7. MySQL 
