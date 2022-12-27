@@ -12,7 +12,7 @@ Some features of this app are
 4. It is a fast and easy solution to problems.
 5. It is available for free download.
 
-### Security and safety:
+### Security and safety
 
 Our app doesn’t need high permissions like many apps that introduce its service as safe services and respect personal privacy
 
@@ -28,13 +28,15 @@ Nowadays, the usage of mobile has become a vital part of the day-to-day activiti
 2. Figma
 
 #### _For Andriod App_
+
 1. Android Studio
 
 #### _For Website_
+
 1. HTML
 2. CSS
 3. JavaScript
 4. ReactJS
 5. PHP
 6. Laravel
-7. MySQL 
+7. MySQL
