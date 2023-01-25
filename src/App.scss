@@ -37,6 +37,3 @@ $font-sizes-mobile: (
   "small": rem(13),
   "pargraph": rem(11),
 );
-div {
-  font-size: map-get($font-sizes-desktop, h1);
-}
