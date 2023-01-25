@@ -1,0 +1,42 @@
+// variables maps
+@use "sass:math";
+
+@function rem($px) {
+  @return (math.div($px, 16) * 1rem);
+}
+$colors: (
+  "primary-1": rgba(6, 59, 95, 1),
+  "primary-2": rgb(8, 79, 126),
+  "primary-3": rgb(13, 118, 189),
+  "primary-4": rgb(29, 155, 240),
+  "primary-5": rgb(74, 175, 243),
+  "primary-6": rgb(119, 195, 246),
+  "primary-7": rgb(165, 215, 249),
+  "primary-8": rgb(195, 228, 251),
+  "accent": rgb(240, 190, 5),
+  "neutral-1": rgb(246, 246, 246),
+  "gradient-1": #34f6f6,
+  "gradient-2": #1d9bf0,
+);
+
+$font-sizes-desktop: (
+  "h1": rem(48),
+  "h2": rem(40),
+  "h3": rem(28),
+  "h4": rem(20),
+  "small": rem(16),
+  "pargraph": rem(20),
+);
+
+$font-sizes-mobile: (
+  "h1": rem(33),
+  "h2": rem(28),
+  "h3": rem(23),
+  "h4": rem(19),
+  "h5": rem(16),
+  "small": rem(13),
+  "pargraph": rem(11),
+);
+div {
+  font-size: map-get($font-sizes-desktop, h1);
+}
