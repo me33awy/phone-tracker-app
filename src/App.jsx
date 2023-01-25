@@ -1,8 +1,13 @@
 import "./App.scss";
 import React from "react";
+import Header from "./components/header";
 
 function App() {
-  return <div>Hello From App Compontent</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
