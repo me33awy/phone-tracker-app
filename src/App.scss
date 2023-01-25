@@ -15,8 +15,9 @@ $colors: (
   "primary-8": rgb(195, 228, 251),
   "accent": rgb(240, 190, 5),
   "neutral-1": rgb(246, 246, 246),
-  "gradient-1": #34f6f6,
-  "gradient-2": #1d9bf0,
+  "gradient-1": rgb(49, 246, 246),
+  "gradient-2": rgb(29, 155, 240),
+  "whiteColor": rgb(255, 255, 255),
 );
 
 $font-sizes-desktop: (
@@ -37,3 +38,18 @@ $font-sizes-mobile: (
   "small": rem(13),
   "pargraph": rem(11),
 );
+
+$grid-breakpoints: (
+  "xs": 0,
+  "sm": rem(576),
+  "md": rem(768),
+  "lg": rem(992),
+  "xl": rem(1200),
+  "xxl": rem(1400),
+);
+
+@mixin mobile() {
+  @media (min-width: map-get($grid-breakpoints,xs)) and (max-width: map-get($grid-breakpoints,md)) {
+    @content;
+  }
+}

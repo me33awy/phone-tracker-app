@@ -1,0 +1,22 @@
+@use "../../App.scss";
+.mobile-menu {
+  display: none;
+  @include App.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  span {
+    width: App.rem(18.24);
+    height: App.rem(1);
+    display: block;
+    background-color: #000;
+    //  background-color: map-get(App.$colors, whiteColor);
+    &:not(:last-child) {
+      margin-bottom: App.rem(6);
+    }
+  }
+}

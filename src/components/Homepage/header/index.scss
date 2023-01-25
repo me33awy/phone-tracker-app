@@ -1,0 +1,11 @@
+@use "../../../App.scss";
+header {
+  position: fixed;
+  width: 100%;
+  .container {
+    @include App.mobile {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
