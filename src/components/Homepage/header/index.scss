@@ -1,6 +1,7 @@
 @use "../../../App.scss";
 header {
   position: fixed;
+  // background-color: rgb(132, 59, 59);
   width: 100%;
   .container {
     @include App.mobile {

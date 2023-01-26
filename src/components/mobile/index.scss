@@ -1,22 +1,60 @@
 @use "../../App.scss";
 .mobile-menu {
   display: none;
+  border: none !important;
+  background: none !important;
   @include App.mobile {
     display: flex;
     flex-direction: column;
     align-items: end;
   }
-  &:hover {
-    cursor: pointer;
+  cursor: default !important;
+  div {
+    padding: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+    span {
+      width: App.rem(18.24);
+      height: App.rem(1);
+      display: block;
+      background-color: #000;
+      position: relative;
+      //  background-color: map-get(App.$colors, whiteColor);
+      &:not(:last-child) {
+        margin-bottom: App.rem(6);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: App.rem(1);
+        background-color: #000;
+        top: -6px;
+        left: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: App.rem(1);
+        background-color: #000;
+        top: 6px;
+        left: 0;
+      }
+    }
   }
+}
+.animate {
   span {
-    width: App.rem(18.24);
-    height: App.rem(1);
-    display: block;
-    background-color: #000;
-    //  background-color: map-get(App.$colors, whiteColor);
-    &:not(:last-child) {
-      margin-bottom: App.rem(6);
+    background: transparent !important ;
+    &::before {
+      top: 0px !important;
+      rotate: 45deg;
+    }
+    &::after {
+      top: 0px !important;
+      rotate: -45deg;
     }
   }
 }

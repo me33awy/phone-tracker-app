@@ -3,11 +3,11 @@ import "./index.scss";
 function MobileMenu() {
   return (
     <>
-      <div className="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <button className="mobile-menu">
+        <div>
+          <span></span>
+        </div>
+      </button>
     </>
   );
 }

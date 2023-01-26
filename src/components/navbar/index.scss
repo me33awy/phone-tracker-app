@@ -7,25 +7,39 @@
 }
 .navbar-nav {
   @include App.mobile {
-    //  display: none !important;
-    flex-direction: column !important;
-   //  position: absolute !important;
-    padding: 0;
+    transform: translatey(-125%) !important;
+    // display: none !important;
+    flex-direction: column-reverse !important;
+    //  position: absolute !important;
     margin: 0;
+    margin-top: App.rem(6);
+    padding: App.rem(16) !important;
+    border-radius: App.rem(10);
     background-color: #000;
-   //  top: 70px;
+    //  top: 70px;
     width: 100%;
     grid-column: span 2;
     a {
       color: #fff !important;
+      padding-top: App.rem(16) !important;
+      padding-bottom: App.rem(16) !important;
+      padding-left: 0 !important;
+      &:not(:first-child) {
+        border-bottom: 1px solid #fff;
+      }
     }
   }
   font-family: "Heebo";
   margin-left: App.rem(70) - App.rem(16);
   a {
     font-size: map-get(App.$font-sizes-desktop, small) !important;
-    padding: App.rem(8) App.rem(16) !important;
+    padding: App.rem(8) App.rem(16);
     font-weight: 600;
+
     //  color: map-get(App.$colors, whiteColor) !important;
   }
+}
+.responsive {
+  // display: flex !important;
+  transform: translatey(0) !important;
 }
