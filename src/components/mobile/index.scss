@@ -10,7 +10,7 @@
   }
   cursor: default !important;
   div {
-    padding: 5px;
+    padding: 10px;
     &:hover {
       cursor: pointer;
     }
@@ -31,6 +31,7 @@
         height: App.rem(1);
         background-color: #000;
         top: -6px;
+        // transform: translateY(-6px);
         left: 0;
       }
       &::after {
@@ -40,6 +41,7 @@
         height: App.rem(1);
         background-color: #000;
         top: 6px;
+        // transform: translateY(6px);
         left: 0;
       }
     }
@@ -50,11 +52,11 @@
     background: transparent !important ;
     &::before {
       top: 0px !important;
-      rotate: 45deg;
+      rotate: -45deg;
     }
     &::after {
       top: 0px !important;
-      rotate: -45deg;
+      rotate: 45deg;
     }
   }
 }

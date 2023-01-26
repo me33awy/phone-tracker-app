@@ -2,6 +2,7 @@
 header {
   position: fixed;
   // background-color: rgb(132, 59, 59);
+  z-index: 10;
   width: 100%;
   .container {
     @include App.mobile {

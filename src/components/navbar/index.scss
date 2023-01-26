@@ -6,8 +6,9 @@
   font-weight: 100 900;
 }
 .navbar-nav {
+  z-index: 1;
   @include App.mobile {
-    transform: translatey(-125%) !important;
+    transform: translatey(-100vh) !important;
     // display: none !important;
     flex-direction: column-reverse !important;
     //  position: absolute !important;
@@ -19,6 +20,8 @@
     //  top: 70px;
     width: 100%;
     grid-column: span 2;
+    // height: 0;
+    // visibility: hidden;
     a {
       color: #fff !important;
       padding-top: App.rem(16) !important;
@@ -40,6 +43,7 @@
   }
 }
 .responsive {
-  // display: flex !important;
+  height: 100% !important ;
+  // visibility: visible !important;
   transform: translatey(0) !important;
 }
