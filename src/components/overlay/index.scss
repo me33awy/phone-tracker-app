@@ -1,0 +1,19 @@
+@use "../../App.scss";
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  // display: none;
+  opacity: 0;
+  background-color: map-get(App.$colors, primary2);
+  z-index: 1;
+  @include App.desktop {
+    display: none;
+  }
+}
+.over {
+  // display: block;
+  opacity: 1;
+}

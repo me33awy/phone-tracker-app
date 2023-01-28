@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Container, Navbar } from "react-bootstrap";
+import { Container, Navbar, Overlay } from "react-bootstrap";
 import PhoneLogo from "../../logo";
 import MobileMenu from "../../mobile";
 import NavBar from "../../navbar";
@@ -9,6 +9,7 @@ import { Nav } from "react-bootstrap";
 function Header() {
   const navRef = useRef();
   const menuAnimate = useRef();
+  const overLayVar = useRef();
   const toggleMenu = () => {
     // console.log(menuAnimate);
     navRef.current.classList.toggle("responsive");
@@ -17,9 +18,14 @@ function Header() {
     // console.log("hello");
     menuAnimate.current.classList.toggle("animate");
   };
+  function over() {
+    console.log(overLayVar);
+    overLayVar.current.classList.toggle("over");
+  }
   const func = () => {
     toggleMenu();
     animateMenu();
+    over();
   };
   return (
     <>
@@ -27,8 +33,8 @@ function Header() {
         <Navbar>
           <Container>
             <PhoneLogo />
-            <button ref={menuAnimate} className="mobile-menu" onClick={func}>
-              <div>
+            <button ref={menuAnimate} className="mobile-menu">
+              <div onClick={func}>
                 <span></span>
               </div>
             </button>
@@ -41,6 +47,7 @@ function Header() {
           </Container>
         </Navbar>
       </header>
+      <div ref={overLayVar} onClick={func} className="overlay"></div>
     </>
   );
 }

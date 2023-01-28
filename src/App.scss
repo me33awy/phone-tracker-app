@@ -5,14 +5,14 @@
   @return (math.div($px, 16) * 1rem);
 }
 $colors: (
-  "primary-1": rgba(6, 59, 95, 1),
-  "primary-2": rgb(8, 79, 126),
-  "primary-3": rgb(13, 118, 189),
-  "primary-4": rgb(29, 155, 240),
-  "primary-5": rgb(74, 175, 243),
-  "primary-6": rgb(119, 195, 246),
-  "primary-7": rgb(165, 215, 249),
-  "primary-8": rgb(195, 228, 251),
+  "primary1": rgba(6, 59, 95, 1),
+  "primary2": rgb(8, 79, 126),
+  "primary3": rgb(13, 118, 189),
+  "primary4": rgb(29, 155, 240),
+  "primary5": rgb(74, 175, 243),
+  "primary6": rgb(119, 195, 246),
+  "primary7": rgb(165, 215, 249),
+  "primary8": rgb(195, 228, 251),
   "accent": rgb(240, 190, 5),
   "neutral-1": rgb(246, 246, 246),
   "gradient-1": rgb(49, 246, 246),
@@ -50,6 +50,11 @@ $grid-breakpoints: (
 
 @mixin mobile() {
   @media (min-width: map-get($grid-breakpoints,xs)) and (max-width: map-get($grid-breakpoints,md)) {
+    @content;
+  }
+}
+@mixin desktop() {
+  @media (min-width: map-get($grid-breakpoints,md)) {
     @content;
   }
 }

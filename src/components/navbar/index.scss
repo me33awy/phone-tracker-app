@@ -6,7 +6,8 @@
   font-weight: 100 900;
 }
 .navbar-nav {
-  z-index: 1;
+  z-index: 2;
+  position: relative;
   @include App.mobile {
     transform: translatey(-100vh) !important;
     // display: none !important;
@@ -16,30 +17,37 @@
     margin-top: App.rem(6);
     padding: App.rem(16) !important;
     border-radius: App.rem(10);
-    background-color: #000;
+    background-color: map-get(App.$colors, whiteColor) !important;
     //  top: 70px;
     width: 100%;
     grid-column: span 2;
     // height: 0;
     // visibility: hidden;
     a {
-      color: #fff !important;
+      color: map-get(App.$colors, primary4) !important;
       padding-top: App.rem(16) !important;
       padding-bottom: App.rem(16) !important;
       padding-left: 0 !important;
       &:not(:first-child) {
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid map-get(App.$colors, primary8);
       }
     }
   }
   font-family: "Heebo";
   margin-left: App.rem(70) - App.rem(16);
   a {
+    @include App.desktop {
+      &:not(:last-child) {
+        margin-right: App.rem(16);
+      }
+    }
     font-size: map-get(App.$font-sizes-desktop, small) !important;
     padding: App.rem(8) App.rem(16);
     font-weight: 600;
-
-    //  color: map-get(App.$colors, whiteColor) !important;
+    color: map-get(App.$colors, whiteColor);
+    &:hover {
+      color: map-get(App.$colors, primary2) !important;
+    }
   }
 }
 .responsive {

@@ -1,5 +1,6 @@
 @use "../../App.scss";
 .mobile-menu {
+  z-index: 3;
   display: none;
   border: none !important;
   background: none !important;
@@ -18,9 +19,8 @@
       width: App.rem(18.24);
       height: App.rem(1);
       display: block;
-      background-color: #000;
       position: relative;
-      //  background-color: map-get(App.$colors, whiteColor);
+      background-color: map-get(App.$colors, whiteColor);
       &:not(:last-child) {
         margin-bottom: App.rem(6);
       }
@@ -29,7 +29,7 @@
         position: absolute;
         width: 100%;
         height: App.rem(1);
-        background-color: #000;
+        background-color: map-get(App.$colors, whiteColor);
         top: -6px;
         // transform: translateY(-6px);
         left: 0;
@@ -39,7 +39,7 @@
         position: absolute;
         width: 100%;
         height: App.rem(1);
-        background-color: #000;
+        background-color: map-get(App.$colors, whiteColor);
         top: 6px;
         // transform: translateY(6px);
         left: 0;
@@ -52,11 +52,11 @@
     background: transparent !important ;
     &::before {
       top: 0px !important;
-      rotate: -45deg;
+      rotate: 45deg;
     }
     &::after {
       top: 0px !important;
-      rotate: 45deg;
+      rotate: -45deg;
     }
   }
 }
