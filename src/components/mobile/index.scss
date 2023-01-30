@@ -47,16 +47,4 @@
     }
   }
 }
-.animate {
-  span {
-    background: transparent !important ;
-    &::before {
-      top: 0px !important;
-      rotate: 45deg;
-    }
-    &::after {
-      top: 0px !important;
-      rotate: -45deg;
-    }
-  }
-}
+

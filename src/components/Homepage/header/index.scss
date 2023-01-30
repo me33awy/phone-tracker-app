@@ -1,12 +1,16 @@
 @use "../../../App.scss";
 header {
   position: fixed;
-  // background-color: rgb(132, 59, 59);
+  top: 0;
+  // background-color: map-get(App.$colors, primary4);
+  // background: transparent;
   z-index: 10;
   width: 100%;
+  max-height: App.rem(200);
   .container {
     @include App.mobile {
       display: grid !important;
+      max-height: App.rem(50);
       grid-template-columns: repeat(2, 1fr);
     }
   }

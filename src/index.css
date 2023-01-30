@@ -12,14 +12,13 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.4s;
-  /* background-color: rgb(29, 155, 240); */
 }
 
 html,
 body {
+  /* height: 10000000px; */
   font-size: 100%;
   font-family: "Lato", sans-serif;
-  background: rgb(29, 155, 240);
 }
 img {
   max-width: 100%;

@@ -13,6 +13,7 @@ $colors: (
   "primary6": rgb(119, 195, 246),
   "primary7": rgb(165, 215, 249),
   "primary8": rgb(195, 228, 251),
+  "primary9": rgba(8, 79, 126, 0.4),
   "accent": rgb(240, 190, 5),
   "neutral-1": rgb(246, 246, 246),
   "gradient-1": rgb(49, 246, 246),
@@ -57,4 +58,43 @@ $grid-breakpoints: (
   @media (min-width: map-get($grid-breakpoints,md)) {
     @content;
   }
+}
+@mixin large() {
+  @media (min-width: map-get($grid-breakpoints,md)) and (max-width: map-get($grid-breakpoints,xl)) {
+    @content;
+  }
+}
+@mixin medium() {
+  @media (min-width: map-get($grid-breakpoints,sm)) and (max-width: map-get($grid-breakpoints,lg)) {
+    @content;
+  }
+}
+.app {
+  position: relative;
+}
+.animate {
+  div {
+    rotate: 180deg;
+    span {
+      background: transparent !important ;
+      &::before {
+        top: 0px !important;
+        rotate: 45deg;
+      }
+      &::after {
+        top: 0px !important;
+        rotate: -45deg;
+      }
+    }
+  }
+}
+.responsive {
+  height: 100% !important ;
+  // visibility: visible !important;
+  transform: translatey(0) !important;
+}
+.over {
+  // display: block;
+  opacity: 1;
+  visibility: visible;
 }

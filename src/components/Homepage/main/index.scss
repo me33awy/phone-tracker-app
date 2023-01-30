@@ -1,0 +1,28 @@
+@use "../../../App.scss";
+main {
+  z-index: 20;
+  background-color: map-get(App.$colors, primary4);
+  // overflow: hidden;
+  background-image: url("../../../assets/images/png/Frame93.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+  padding-top: App.rem(62);
+  //   min-height: 100vh;
+  .row {
+    & > div {
+      min-height: 100vh;
+    }
+  }
+  @include App.mobile {
+    padding-top: App.rem(66);
+    background-image: none;
+  }
+  @include App.large {
+    background-position-x: 150%;
+  }
+  @include App.medium {
+    // background-position-x: ;
+    background-image: none;
+  }
+}
