@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./index.scss";
 import Frame from "../../../assets/images/png/Frame93.png";
+import DownloadButton from "../../download-btn";
 const Main = () => {
   return (
     <main>
@@ -12,7 +13,7 @@ const Main = () => {
             <p>
               tracking your lost mobile phone and protecting their stored data
             </p>
-            <Button>Download The App</Button>
+            <DownloadButton />
           </Col>
         </Row>
       </Container>

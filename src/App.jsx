@@ -12,33 +12,6 @@ function App() {
         <Header />
         <Over />
         <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
       </div>
     </>
   );

@@ -4,6 +4,12 @@
   src: url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
   font-weight: 100 900;
 }
+@font-face {
+  font-family: "Heebo";
+  src: url("./assets/fonts/Heebo/Heebo-VariableFont_wght.ttf");
+  src: url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  font-weight: 100 900;
+}
 
 *,
 *::before,
@@ -17,8 +23,8 @@
 html,
 body {
   /* height: 10000000px; */
-  font-size: 100%;
-  font-family: "Lato", sans-serif;
+  font-size: 100% !important;
+  font-family: "Heebo", sans-serif !important;
 }
 img {
   max-width: 100%;
