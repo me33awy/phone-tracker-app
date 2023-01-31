@@ -1,6 +1,7 @@
 @use "../../../App.scss";
 main {
-  z-index: 20;
+  // position: sticky;
+  // z-index: 20;
   background-color: map-get(App.$colors, primary4);
   // overflow: hidden;
   background-image: url("../../../assets/images/png/Frame93.png");

@@ -47,6 +47,7 @@ $grid-breakpoints: (
   "lg": rem(992),
   "xl": rem(1200),
   "xxl": rem(1400),
+  "height": rem(320),
 );
 
 @mixin mobile() {

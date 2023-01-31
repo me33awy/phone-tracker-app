@@ -5,11 +5,13 @@ import MobileMenu from "../../mobile";
 import NavBar from "../../navbar";
 import "./index.scss";
 import { Nav } from "react-bootstrap";
+import { useState, useEffect } from "react";
 
 function Header() {
   const navRef = useRef();
   const menuAnimate = useRef();
   const overLayVar = useRef();
+  const headerBackground = useRef();
   const toggleMenu = () => {
     // console.log(menuAnimate);
     navRef.current.classList.toggle("responsive");
@@ -22,14 +24,42 @@ function Header() {
     console.log(overLayVar);
     overLayVar.current.classList.toggle("over");
   }
+  const toggleScroll = () => {
+    console.log("hi Scroll");
+    isScroll(!scroll);
+  };
+  function headerBackgroudAppear() {
+    setBackground(!background);
+  }
   const func = () => {
     toggleMenu();
     animateMenu();
     over();
+    toggleScroll();
   };
+  const [scroll, isScroll] = useState(false);
+  scroll
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
+  const [background, setBackground] = useState(false);
+  const changeBackground = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY >= 66) {
+      headerBackground.current.style.backgroundColor = "rgb(29, 155, 240)";
+      setBackground(true);
+    } else {
+      headerBackground.current.style.backgroundColor = "transparent";
+      setBackground(false);
+    }
+  };
+  useEffect(() => {
+    changeBackground();
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground);
+  });
   return (
     <>
-      <header>
+      <header ref={headerBackground}>
         <Navbar>
           <Container>
             <PhoneLogo />

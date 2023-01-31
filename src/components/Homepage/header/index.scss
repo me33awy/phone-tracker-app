@@ -3,6 +3,7 @@ header {
   position: fixed;
   top: 0;
   // background-color: map-get(App.$colors, primary4);
+  // backdrop-filter: blur(App.rem(10));
   // background: transparent;
   z-index: 10;
   width: 100%;
