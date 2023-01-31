@@ -55,6 +55,9 @@ $grid-breakpoints: (
   @media (min-width: map-get($grid-breakpoints,xs)) and (max-width: map-get($grid-breakpoints,md)) {
     @content;
   }
+  @media (max-height: rem(320)) {
+    @content;
+  }
 }
 @mixin desktop() {
   @media (min-width: map-get($grid-breakpoints,md)) {
@@ -62,7 +65,7 @@ $grid-breakpoints: (
   }
 }
 @mixin large() {
-  @media (min-width: map-get($grid-breakpoints,md)) and (max-width: map-get($grid-breakpoints,xl)) {
+  @media (min-width: map-get($grid-breakpoints,lg)) and (max-width: map-get($grid-breakpoints,xl)) {
     @content;
   }
 }

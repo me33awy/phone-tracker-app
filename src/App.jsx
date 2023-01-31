@@ -4,6 +4,7 @@ import Header from "./components/Homepage/header";
 import Over from "./components/overlay";
 import Main from "./components/Homepage/main";
 import { useRef } from "react";
+import Test from "./components/Test";
 
 function App() {
   return (
@@ -11,6 +12,82 @@ function App() {
       <div className="app">
         <Header />
         <Over />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Main />
+        <Test />
+        <Main />
+        <Main />
+        <Main />
         <Main />
       </div>
     </>

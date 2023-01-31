@@ -6,7 +6,6 @@ import NavBar from "../../navbar";
 import "./index.scss";
 import { Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
-
 function Header() {
   const navRef = useRef();
   const menuAnimate = useRef();
@@ -57,11 +56,13 @@ function Header() {
     // adding the event when scroll change background
     window.addEventListener("scroll", changeBackground);
   });
+  let link = "#page";
+  let google = "https://www.google.com/";
   return (
     <>
       <header ref={headerBackground}>
         <Navbar>
-          <Container>
+          <Container className="headerContainer">
             <PhoneLogo />
             <button ref={menuAnimate} className="mobile-menu">
               <div onClick={func}>
@@ -69,7 +70,7 @@ function Header() {
               </div>
             </button>
             <Nav className="me-auto" ref={navRef}>
-              <Nav.Link href="#home">About app</Nav.Link>
+              <Nav.Link href={link}>About app</Nav.Link>
               <Nav.Link href="#link">Features</Nav.Link>
               <Nav.Link href="#link">Contact</Nav.Link>
               <Nav.Link href="#link">Download the app</Nav.Link>

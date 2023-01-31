@@ -12,7 +12,7 @@
   z-index: 1;
   // backdrop-filter: blur(App.rem(10));
   // filter: blur(0.6px);
-  @include App.desktop {
+  @include App.large {
     display: none;
   }
 }
