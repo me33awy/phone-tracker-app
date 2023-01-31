@@ -1,5 +1,3 @@
-!(./src/assets/design/desktop.png)
-
 # **Phone Tracking Application:**
 
 _phone tracking application provided a solution to a problem that occurs continuously and often with many people._
