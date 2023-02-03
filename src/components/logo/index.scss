@@ -1,6 +1,6 @@
 @use "../../App.scss";
 .navbar-brand {
-  z-index: 4;
+  // z-index: 4;
   @include App.mobile {
     flex: 1;
   }

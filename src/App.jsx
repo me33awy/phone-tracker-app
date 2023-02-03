@@ -1,94 +1,12 @@
 import "./App.scss";
 import React, { useState } from "react";
-import Header from "./components/Homepage/header";
-import Over from "./components/overlay";
-import Main from "./components/Homepage/main";
-import { useRef } from "react";
-import Test from "./components/Test";
+import Home from "./components/home";
 
 function App() {
   return (
     <>
       <div className="app">
-        <Header />
-        <Over />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
-        <Test />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
+        <Home />
       </div>
     </>
   );
