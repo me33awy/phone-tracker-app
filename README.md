@@ -1,6 +1,8 @@
+![Group 108](https://user-images.githubusercontent.com/109080663/216635091-f866221f-80d1-45a7-af51-8490b3693d05.png)
 # **Phone Tracking Application:**
 
 _phone tracking application provided a solution to a problem that occurs continuously and often with many people._
+
 
 ## Problem Definition:
 
