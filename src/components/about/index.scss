@@ -1,0 +1,39 @@
+@use "../../App.scss";
+.about {
+  padding: App.rem(16) 0;
+  .content {
+    @include App.desktop {
+      flex-direction: row !important;
+    }
+  }
+  &__title {
+    @include App.desktop {
+      flex: 1;
+    }
+    h3 {
+      @include App.large {
+        max-width: 50%;
+      }
+      font-size: map-get(App.$font-sizes-mobile, h3);
+      line-height: 150%;
+      background: linear-gradient(
+        to right,
+        map-get(App.$colors, gradient1),
+        map-get(App.$colors, gradient3)
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400 !important;
+    }
+  }
+  &__paragraph {
+    @include App.desktop {
+      flex: 3;
+    }
+    p {
+      line-height: 150%;
+      color: map-get(App.$colors, primary1);
+      // font-size: map-get(App.$font-sizes-mobile, pargraph);
+    }
+  }
+}

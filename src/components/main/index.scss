@@ -1,0 +1,62 @@
+@use "../../App.scss";
+main {
+  // position: sticky;
+  // z-index: 20;
+  background-color: map-get(App.$colors, primary4);
+  // overflow: hidden;
+  background-image: url("../../assets/images/png/Frame93.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+  padding-top: App.rem(62);
+  //   min-height: 100vh;
+  .row {
+    & > div {
+      @include App.desktop {
+        min-height: 100vh;
+      }
+      &:first-child {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include App.desktop {
+          text-align: start;
+          align-items: flex-start;
+        }
+        h1 {
+          font-size: map-get(App.$font-sizes-mobile, h1);
+          color: map-get(App.$colors, whiteColor);
+          @include App.desktop {
+            font-size: map-get(App.$font-sizes-desktop, h1);
+          }
+        }
+        p {
+          font-size: map-get(App.$font-sizes-mobile, pargraph);
+          color: map-get(App.$colors, whiteColor);
+          opacity: 75%;
+          line-height: 150%;
+          @include App.desktop {
+            font-size: map-get(App.$font-sizes-desktop, pargraph);
+          }
+        }
+      }
+    }
+  }
+  @include App.mobile {
+    padding-top: App.rem(66);
+    background-image: url("../../assets/images/png/Frame94.png");
+    background-size: cover;
+    padding: App.rem(66);
+  }
+  @include App.large {
+    background-position-x: 150%;
+  }
+  @include App.medium {
+    // background-position-x: ;
+    background-size: contain;
+    background-image: url("../../assets/images/png/Frame94.png");
+    // background-image: none;
+  }
+}

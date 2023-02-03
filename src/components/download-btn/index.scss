@@ -1,0 +1,16 @@
+@use "../../App.scss";
+.download-button {
+  padding: App.rem(8) App.rem(24) !important;
+  color: map-get(App.$colors, primary1) !important;
+  background-color: map-get(App.$colors, whiteColor) !important;
+  border-radius: App.rem(60) !important;
+  font-size: map-get(App.$font-sizes-mobile, small) !important;
+  font-weight: 600 !important;
+  border: none !important;
+  box-shadow: App.rem(2) App.rem(4) App.rem(20) App.rem(0)
+    map-get(App.$colors, blackColor);
+  @include App.desktop {
+    padding: App.rem(24) App.rem(48) !important;
+    font-size: map-get(App.$font-sizes-desktop, small) !important;
+  }
+}
