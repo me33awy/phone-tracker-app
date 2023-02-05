@@ -4,6 +4,8 @@
   .content {
     @include App.desktop {
       flex-direction: row !important;
+      text-align: start !important;
+      gap: App.rem(60);
     }
   }
   &__title {
@@ -11,8 +13,11 @@
       flex: 1;
     }
     h3 {
-      @include App.large {
-        max-width: 50%;
+      @include App.desktop {
+        font-size: map-get(App.$font-sizes-desktop, h2) !important;
+      }
+      @include App.medium {
+        font-size: map-get(App.$font-sizes-desktop, h3) !important;
       }
       font-size: map-get(App.$font-sizes-mobile, h3);
       line-height: 150%;
@@ -31,6 +36,9 @@
       flex: 3;
     }
     p {
+      @include App.desktop {
+        font-size: map-get(App.$font-sizes-desktop, pargraph) !important;
+      }
       line-height: 150%;
       color: map-get(App.$colors, primary1);
       // font-size: map-get(App.$font-sizes-mobile, pargraph);
