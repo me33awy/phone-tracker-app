@@ -11,8 +11,7 @@ Nowadays, the usage of mobile has become a vital part of the day-to-day activiti
 
 #### For User-Interface
 
-<a href="https://www.adobe.com/">AdobeXD</a><br/>
-<a href="https://figma.com/">Figma</a>
+<a href="https://www.adobe.com/">AdobeXD</a> | <a href="https://figma.com/">Figma</a>
 
 #### For Andriod App
 
@@ -20,10 +19,4 @@ Nowadays, the usage of mobile has become a vital part of the day-to-day activiti
 
 #### For Website
 
-1. HTML
-2. CSS
-3. JavaScript
-4. ReactJS
-5. PHP
-6. Laravel
-7. MySQL
+HTML | CSS | JavaScript | ReactJS | PHP | Laravel | MySQL
