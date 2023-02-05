@@ -11,7 +11,7 @@ Nowadays, the usage of mobile has become a vital part of the day-to-day activiti
 
 #### _For User-Interface:_
 
-<a href="https://www.adobe.com/">AdobeXD</a>
+<a href="https://www.adobe.com/">AdobeXD</a><br/>
 <a href="https://figma.com/">Figma</a>
 
 #### _For Andriod App_
