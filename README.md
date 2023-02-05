@@ -9,16 +9,16 @@ Nowadays, the usage of mobile has become a vital part of the day-to-day activiti
 
 ### Tools:
 
-#### _For User-Interface:_
+#### For User-Interface
 
 <a href="https://www.adobe.com/">AdobeXD</a><br/>
 <a href="https://figma.com/">Figma</a>
 
-#### _For Andriod App_
+#### For Andriod App
 
 <a href="https://developer.android.com/studio">Android Studio</a>
 
-#### _For Website_
+#### For Website
 
 1. HTML
 2. CSS
