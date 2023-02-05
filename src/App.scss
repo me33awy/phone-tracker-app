@@ -70,8 +70,14 @@ $grid-breakpoints: (
     @content;
   }
 }
+
 @mixin medium() {
   @media (min-width: map-get($grid-breakpoints,sm)) and (max-width: map-get($grid-breakpoints,lg)) {
+    @content;
+  }
+}
+@mixin x-large() {
+  @media (min-width: map-get($grid-breakpoints,lg)) {
     @content;
   }
 }

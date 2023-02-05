@@ -1,6 +1,9 @@
 @use "../../App.scss";
 .about {
   padding: App.rem(16) 0;
+  @include App.desktop {
+    padding: App.rem(64) 0;
+  }
   .content {
     @include App.desktop {
       flex-direction: row !important;

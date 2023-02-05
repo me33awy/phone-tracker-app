@@ -11,6 +11,7 @@ function Header() {
   const menuAnimate = useRef();
   const overLayVar = useRef();
   const headerBackground = useRef();
+  const clickLink = useRef();
   const toggleMenu = () => {
     // console.log(menuAnimate);
     navRef.current.classList.toggle("responsive");
@@ -29,6 +30,13 @@ function Header() {
   };
   function headerBackgroudAppear() {
     setBackground(!background);
+  }
+  function clickOver() {
+    console.log("hi Five")
+    overLayVar.current.classList.toggle("over");
+    navRef.current.classList.toggle("responsive");
+    menuAnimate.current.classList.toggle("animate");
+
   }
   const func = () => {
     toggleMenu();
@@ -56,8 +64,6 @@ function Header() {
     // adding the event when scroll change background
     window.addEventListener("scroll", changeBackground);
   });
-  let link = "#page";
-  let google = "https://www.google.com/";
   return (
     <>
       <header ref={headerBackground}>
@@ -70,10 +76,18 @@ function Header() {
               </div>
             </button>
             <Nav className="me-auto" ref={navRef}>
-              <Nav.Link href={link}>About app</Nav.Link>
-              <Nav.Link href="#link">Features</Nav.Link>
-              <Nav.Link href="#link">Contact</Nav.Link>
-              <Nav.Link href="#link">Download the app</Nav.Link>
+              <Nav.Link href="#about" onClick={clickOver} ref={clickLink}>
+                About app
+              </Nav.Link>
+              <Nav.Link href="#features" onClick={clickOver} ref={clickLink}>
+                Features
+              </Nav.Link>
+              <Nav.Link href="#contact" ref={clickLink}>
+                Contact
+              </Nav.Link>
+              <Nav.Link href="#download" ref={clickLink}>
+                Download the app
+              </Nav.Link>
             </Nav>
           </Container>
         </Navbar>
@@ -82,5 +96,4 @@ function Header() {
     </>
   );
 }
-
 export default Header;

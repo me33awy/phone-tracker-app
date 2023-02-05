@@ -12,8 +12,8 @@
   z-index: 1;
   // backdrop-filter: blur(App.rem(10));
   // filter: blur(0.6px);
-  @include App.large {
-    display: none;
+  @include App.x-large {
+    display: none !important;
   }
 }
 

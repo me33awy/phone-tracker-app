@@ -3,13 +3,17 @@ import Header from "../header";
 import Over from "../overlay";
 import Main from "../main";
 import About from "../about";
+import Features from "../features";
 const Home = () => {
   return (
     <>
-      <Header />
-      <Over />
-      <Main />
-      <About />
+      <div id="home">
+        <Header />
+        <Over />
+        <Main />
+        <About />
+        <Features />
+      </div>
     </>
   );
 };

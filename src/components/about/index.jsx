@@ -4,7 +4,7 @@ import "./index.scss";
 const About = () => {
   return (
     <>
-      <div className="about">
+      <div className="about" id="about">
         <Container>
           <div className="content text-center d-flex flex-column">
             <div className="about__title">
