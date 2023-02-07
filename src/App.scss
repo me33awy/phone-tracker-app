@@ -14,6 +14,7 @@ $colors: (
   "primary7": rgb(165, 215, 249),
   "primary8": rgb(195, 228, 251),
   "primary9": rgba(8, 79, 126, 0.4),
+  "primary10": rgba(55, 47, 50, 0.1),
   "accent": rgb(240, 190, 5),
   "neutral": rgb(246, 246, 246),
   "gradient1": rgb(29, 155, 240),
@@ -109,4 +110,10 @@ $grid-breakpoints: (
   // display: block;
   opacity: 1;
   visibility: visible;
+}
+.pDisply {
+  display: block !important;
+}
+.op {
+  opacity: 1 !important;
 }

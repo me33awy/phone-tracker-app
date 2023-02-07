@@ -4,6 +4,7 @@ import Over from "../overlay";
 import Main from "../main";
 import About from "../about";
 import Features from "../features";
+import Problems from "../problems";
 const Home = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const Home = () => {
         <Main />
         <About />
         <Features />
+        <Problems />
       </div>
     </>
   );
