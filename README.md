@@ -17,4 +17,4 @@ nowadays, the usage of mobile has become a vital part of the day-to-day activiti
 
 #### For Website
 
-<a href="https://www.w3schools.com/html/"> HTML</a> | <a href="https://www.w3schools.com/css/"> CSS</a> | <a href="https://www.w3schools.com/javascript/"> JavaScript</a> | <a href="https://www.w3schools.com/react/"> ReactJS</a> | <a href="https://www.w3schools.com/scss/"> Scss</a> | <a href="https://www.w3schools.com/php/"> PHP</a> | <a href="https://www.w3schools.com/laravel/"> Laravel</a> | <a href="https://www.w3schools.com/mysql/"> MySQL</a>
+<a href="https://www.w3schools.com/html/"> HTML</a> | <a href="https://www.w3schools.com/css/"> CSS</a> | <a href="https://www.w3schools.com/js/"> JavaScript</a> | <a href="https://www.w3schools.com/react/"> ReactJS</a> | <a href="https://www.w3schools.com/scss/"> Scss</a> | <a href="https://www.w3schools.com/php/"> PHP</a> | <a href="https://www.w3schools.com/laravel/"> Laravel</a> | <a href="https://www.w3schools.com/mysql/"> MySQL</a>
