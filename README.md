@@ -3,10 +3,7 @@
 # **Phone Tracking Application:**
 
 phone tracking application provided a solution to a problem that occurs continuously and often with many people.
-
-### Background:
-
-Nowadays, the usage of mobile has become a vital part of the day-to-day activities of people. We can refer to the current time as the era of Smartphones. Suppressing all other traditional communication purposes, smartphones are now at the peak of popularity in their usage of accessing the internet which includes mail access, social networking, mobile shopping, mobile banking, etc.
+nowadays, the usage of mobile has become a vital part of the day-to-day activities of people. We can refer to the current time as the era of Smartphones. Suppressing all other traditional communication purposes, smartphones are now at the peak of popularity in their usage of accessing the internet which includes mail access, social networking, mobile shopping, mobile banking, etc.
 
 ### Tools:
 
@@ -20,4 +17,4 @@ Nowadays, the usage of mobile has become a vital part of the day-to-day activiti
 
 #### For Website
 
-HTML | CSS | JavaScript | ReactJS | PHP | Laravel | MySQL
+<a href="https://www.w3schools.com/html/"> HTML</a> | <a href="https://www.w3schools.com/css/"> CSS</a> | <a href="https://www.w3schools.com/javascript/"> JavaScript</a> | <a href="https://www.w3schools.com/react/"> ReactJS</a> | <a href="https://www.w3schools.com/scss/"> Scss</a> | <a href="https://www.w3schools.com/php/"> PHP</a> | <a href="https://www.w3schools.com/laravel/"> Laravel</a> | <a href="https://www.w3schools.com/mysql/"> MySQL</a>
