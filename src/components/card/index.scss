@@ -1,0 +1,29 @@
+@use "../../App.scss";
+.custom__card {
+  border: none !important;
+  @include App.desktop {
+    flex: 1;
+  }
+  .card__img {
+    margin-right: App.rem(8);
+    @include App.desktop {
+      display: none;
+    }
+  }
+  .card__title {
+    margin-bottom: 0 !important;
+    font-size: map-get(App.$font-sizes-mobile, h5);
+    color: map-get(App.$colors, primary4);
+    @include App.desktop {
+      font-size: map-get(App.$font-sizes-desktop, h3);
+    }
+  }
+  .card__text {
+    margin-top: App.rem(2);
+    line-height: 150%;
+    color: map-get(App.$colors, primary1);
+    @include App.desktop {
+      font-size: map-get(App.$font-sizes-desktop, h4);
+    }
+  }
+}

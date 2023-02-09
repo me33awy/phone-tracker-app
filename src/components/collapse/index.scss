@@ -1,0 +1,40 @@
+@use "../../App.scss";
+.live__collapse {
+  padding: App.rem(34) 0;
+  &:not(:last-child) {
+    border-bottom: App.rem(2) solid map-get(App.$colors, primary10);
+    // margin-bottom: App.rem(17+17);
+  }
+  .collapse__grid {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    // align-items: center;
+  }
+  .plus {
+    padding-right: App.rem(8);
+    grid-row: span 2;
+    cursor: pointer;
+    img {
+      width: App.rem(30);
+    }
+  }
+  .text {
+    h5 {
+      margin: 0 !important;
+      transition: 0s !important;
+      font-size: map-get(App.$font-sizes-mobile, h5);
+      color: map-get(App.$colors, primary1);
+      opacity: 0.5;
+      line-height: 150%;
+    }
+  }
+  .pragraph__text {
+    display: none;
+    margin-top: App.rem(8);
+    p {
+      font-size: map-get(App.$font-sizes-mobile, h5);
+      color: map-get(App.$colors, primary1);
+      opacity: 0.75;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "../../App.scss";
+.problems {
+  margin-top: App.rem(64);
+  h2 {
+    font-size: map-get(App.$font-sizes-mobile, h2);
+    background: linear-gradient(
+      to right,
+      map-get(App.$colors, gradient1),
+      map-get(App.$colors, gradient3)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: App.rem(32);
+  }
+}
