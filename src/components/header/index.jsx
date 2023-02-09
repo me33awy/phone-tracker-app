@@ -21,33 +21,22 @@ function Header() {
     menuAnimate.current.classList.toggle("animate");
   };
   function over() {
-    console.log(overLayVar);
+    // console.log(overLayVar);
     overLayVar.current.classList.toggle("over");
   }
-  const toggleScroll = () => {
-    console.log("hi Scroll");
-    isScroll(!scroll);
-  };
+
   function headerBackgroudAppear() {
     setBackground(!background);
   }
-  function clickOver() {
-    console.log("hi Five")
-    overLayVar.current.classList.toggle("over");
-    navRef.current.classList.toggle("responsive");
-    menuAnimate.current.classList.toggle("animate");
 
-  }
-  const func = () => {
-    toggleMenu();
-    animateMenu();
-    over();
-    toggleScroll();
-  };
-  const [scroll, isScroll] = useState(false);
+  let [scroll, isScroll] = useState(false);
   scroll
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
+  const toggleScroll = () => {
+    // console.log("hi Scroll");
+    isScroll(!scroll);
+  };
   const [background, setBackground] = useState(false);
   const changeBackground = () => {
     // console.log(window.scrollY);
@@ -64,6 +53,19 @@ function Header() {
     // adding the event when scroll change background
     window.addEventListener("scroll", changeBackground);
   });
+  function clickOver() {
+    console.log("Hi clickOver Function Here");
+    overLayVar.current.classList.remove("over");
+    navRef.current.classList.remove("responsive");
+    menuAnimate.current.classList.remove("animate");
+    isScroll(!scroll);
+  }
+  const func = () => {
+    toggleMenu();
+    animateMenu();
+    over();
+    toggleScroll();
+  };
   return (
     <>
       <header ref={headerBackground}>
