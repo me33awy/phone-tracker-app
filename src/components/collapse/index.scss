@@ -6,6 +6,8 @@
     // margin-bottom: App.rem(17+17);
   }
   .collapse__grid {
+    position: relative;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 5% 95%;
     // align-items: center;
@@ -20,6 +22,7 @@
   }
   .text {
     h5 {
+      // background-color: map-get(App.$colors, whiteColor);
       margin: 0 !important;
       transition: 0s !important;
       font-size: map-get(App.$font-sizes-mobile, h5);
@@ -29,8 +32,12 @@
     }
   }
   .pragraph__text {
-    display: none;
-    margin-top: App.rem(8);
+    position: relative;
+    top: -100%;
+    width: 100%;
+    transform: translatey(-100%);
+    // display: none;
+    // margin-top: App.rem(8);
     p {
       font-size: map-get(App.$font-sizes-mobile, h5);
       color: map-get(App.$colors, primary1);

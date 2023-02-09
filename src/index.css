@@ -23,7 +23,7 @@
 
 html,
 body {
-  /* height: 10000000px; */
+  height: 10000000px;
   font-size: 100% !important;
   font-family: "Heebo" !important;
 }
