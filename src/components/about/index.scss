@@ -1,6 +1,7 @@
 @use "../../App.scss";
 .about {
   padding: App.rem(16) 0;
+  padding-top: App.rem(70);
   @include App.desktop {
     padding: App.rem(64) 0;
   }

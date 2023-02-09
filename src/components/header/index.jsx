@@ -58,7 +58,9 @@ function Header() {
     overLayVar.current.classList.remove("over");
     navRef.current.classList.remove("responsive");
     menuAnimate.current.classList.remove("animate");
-    isScroll(!scroll);
+    if (window.innerWidth <= 768) {
+      isScroll(!scroll);
+    }
   }
   const func = () => {
     toggleMenu();

@@ -1,6 +1,7 @@
 @use "../../App.scss";
 .features {
   margin-top: App.rem(33);
+  padding-top: App.rem(70);
   @include App.desktop {
     margin-top: App.rem(120);
   }
@@ -31,7 +32,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     .card__flex {
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-bottom: App.rem(32);
         @include App.desktop {
           margin-bottom: App.rem(40);

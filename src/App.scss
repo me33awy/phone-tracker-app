@@ -57,7 +57,7 @@ $grid-breakpoints: (
   @media (min-width: map-get($grid-breakpoints,xs)) and (max-width: map-get($grid-breakpoints,md)) {
     @content;
   }
-  @media (max-height: rem(320)) {
+  @media (max-height: rem(350)) {
     @content;
   }
 }
@@ -107,7 +107,9 @@ $grid-breakpoints: (
   transform: translatey(0) !important;
 }
 .over {
-  // display: block;
+  @include mobile {
+    display: block !important;
+  }
   opacity: 1;
   visibility: visible;
 }
@@ -116,8 +118,4 @@ $grid-breakpoints: (
 }
 .op {
   opacity: 1 !important;
-}
-
-.scroll__down {
-  overflow: hidden !important;
 }
