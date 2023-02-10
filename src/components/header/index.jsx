@@ -89,7 +89,7 @@ function Header() {
               <Nav.Link href="#contact" ref={clickLink}>
                 Contact
               </Nav.Link>
-              <Nav.Link href="#download" ref={clickLink}>
+              <Nav.Link href="#download" onClick={clickOver} ref={clickLink}>
                 Download the app
               </Nav.Link>
             </Nav>

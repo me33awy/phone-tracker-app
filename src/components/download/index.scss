@@ -1,0 +1,27 @@
+@use "../../App.scss";
+.download {
+  h4 {
+    font-size: map-get(App.$font-sizes-mobile, h2);
+    background: linear-gradient(
+      to right,
+      map-get(App.$colors, gradient1),
+      map-get(App.$colors, gradient3)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: App.rem(32);
+    @include App.desktop{
+      font-size: map-get(App.$font-sizes-desktop, h2);
+    }
+  }
+  .alt-btn {
+    background-image: linear-gradient(
+      to top,
+      map-get(App.$colors, gradient1),
+      map-get(App.$colors, gradient2)
+    ) !important;
+    color: map-get(App.$colors, whiteColor) !important;
+    font-weight: 600;
+    box-shadow: none !important;
+  }
+}

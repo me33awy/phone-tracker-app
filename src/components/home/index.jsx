@@ -5,6 +5,7 @@ import Main from "../main";
 import About from "../about";
 import Features from "../features";
 import Problems from "../problems";
+import Download from "../download";
 const Home = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Home = () => {
         <About />
         <Features />
         <Problems />
+        <Download />
       </div>
     </>
   );
