@@ -4,9 +4,11 @@ import PhoneLogo from "../logo";
 import MobileMenu from "../mobile";
 import NavBar from "../navbar";
 import "./index.scss";
+import Logo from "../../assets/images/svg/logo.svg";
+import Logo__Alt from "../../assets/images/svg/logo-alt.svg";
 import { Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
-function Header() {
+function Header(props) {
   const navRef = useRef();
   const menuAnimate = useRef();
   const overLayVar = useRef();
@@ -70,10 +72,10 @@ function Header() {
   };
   return (
     <>
-      <header ref={headerBackground}>
+      <header className={props.reuse} logo={Logo} ref={headerBackground}>
         <Navbar>
           <Container className="headerContainer">
-            <PhoneLogo />
+            <PhoneLogo logo={Logo } />
             <button ref={menuAnimate} className="mobile-menu">
               <div onClick={func}>
                 <span></span>

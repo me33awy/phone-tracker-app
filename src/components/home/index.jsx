@@ -6,6 +6,7 @@ import About from "../about";
 import Features from "../features";
 import Problems from "../problems";
 import Download from "../download";
+import Footer from "../footer";
 const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = () => {
         <Features />
         <Problems />
         <Download />
+        <Footer />
       </div>
     </>
   );

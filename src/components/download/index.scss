@@ -1,5 +1,9 @@
 @use "../../App.scss";
 .download {
+  margin: App.rem(1668-1636) 0;
+  @include App.desktop {
+    margin: App.rem(128);
+  }
   h4 {
     font-size: map-get(App.$font-sizes-mobile, h2);
     background: linear-gradient(
@@ -10,7 +14,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: App.rem(32);
-    @include App.desktop{
+    @include App.desktop {
       font-size: map-get(App.$font-sizes-desktop, h2);
     }
   }
