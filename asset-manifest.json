@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/phone-tracker-app/static/css/main.df6b3495.css",
-    "main.js": "/phone-tracker-app/static/js/main.2a9ba9c7.js",
+    "main.css": "/phone-tracker-app/static/css/main.df300526.css",
+    "main.js": "/phone-tracker-app/static/js/main.5eda84d9.js",
     "static/js/787.314b4bea.chunk.js": "/phone-tracker-app/static/js/787.314b4bea.chunk.js",
     "static/media/Frame93.png": "/phone-tracker-app/static/media/Frame93.889ff3949acdf3358779.png",
+    "static/media/logo-alt.svg": "/phone-tracker-app/static/media/logo-alt.e7ace70686e8c5a0e4fae703920a7fa4.svg",
     "static/media/Lato-Regular.ttf": "/phone-tracker-app/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
     "static/media/Heebo-VariableFont_wght.ttf": "/phone-tracker-app/static/media/Heebo-VariableFont_wght.bdd2bce90ff72a7d6db1.ttf",
     "static/media/frame95.svg": "/phone-tracker-app/static/media/frame95.e5230bf68a8d80941c89f0ede59ff7ec.svg",
@@ -21,12 +22,12 @@
     "index.html": "/phone-tracker-app/index.html",
     "static/media/plus.svg": "/phone-tracker-app/static/media/plus.5fd051372055cf5157a72961774d0451.svg",
     "static/media/min.svg": "/phone-tracker-app/static/media/min.d4a0b11c9bb5ceebbadea5ff1488d38f.svg",
-    "main.df6b3495.css.map": "/phone-tracker-app/static/css/main.df6b3495.css.map",
-    "main.2a9ba9c7.js.map": "/phone-tracker-app/static/js/main.2a9ba9c7.js.map",
+    "main.df300526.css.map": "/phone-tracker-app/static/css/main.df300526.css.map",
+    "main.5eda84d9.js.map": "/phone-tracker-app/static/js/main.5eda84d9.js.map",
     "787.314b4bea.chunk.js.map": "/phone-tracker-app/static/js/787.314b4bea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df6b3495.css",
-    "static/js/main.2a9ba9c7.js"
+    "static/css/main.df300526.css",
+    "static/js/main.5eda84d9.js"
   ]
 }
