@@ -7,6 +7,7 @@ import Features from "../features";
 import Problems from "../problems";
 import Download from "../download";
 import Footer from "../footer";
+import Contact from "../contact";
 const Home = () => {
   return (
     <>

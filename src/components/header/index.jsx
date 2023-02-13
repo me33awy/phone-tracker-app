@@ -8,6 +8,10 @@ import Logo from "../../assets/images/svg/logo.svg";
 import Logo__Alt from "../../assets/images/svg/logo-alt.svg";
 import { Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import Contact from "../contact";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "../home";
+import { HashLink } from "react-router-hash-link";
 function Header(props) {
   const navRef = useRef();
   const menuAnimate = useRef();
@@ -72,10 +76,10 @@ function Header(props) {
   };
   return (
     <>
-      <header className={props.reuse} logo={Logo} ref={headerBackground}>
+      <header className={props.className} logo={Logo} ref={headerBackground}>
         <Navbar>
           <Container className="headerContainer">
-            <PhoneLogo logo={Logo } />
+            <PhoneLogo logo={Logo} />
             <button ref={menuAnimate} className="mobile-menu">
               <div onClick={func}>
                 <span></span>
@@ -83,16 +87,25 @@ function Header(props) {
             </button>
             <Nav className="me-auto" ref={navRef}>
               <Nav.Link href="#about" onClick={clickOver} ref={clickLink}>
-                About app
+                <HashLink smooth to="/#about">
+                  {" "}
+                  About app{" "}
+                </HashLink>
               </Nav.Link>
               <Nav.Link href="#features" onClick={clickOver} ref={clickLink}>
-                Features
+                <HashLink smooth to="/#features">
+                  {" "}
+                  Features{" "}
+                </HashLink>
               </Nav.Link>
-              <Nav.Link href="#contact" ref={clickLink}>
-                Contact
+              <Nav.Link ref={clickLink}>
+                <Link to="/contact"> Contact</Link>
               </Nav.Link>
               <Nav.Link href="#download" onClick={clickOver} ref={clickLink}>
-                Download the app
+                <HashLink smooth to="/#download">
+                  {" "}
+                  Download the app{" "}
+                </HashLink>
               </Nav.Link>
             </Nav>
           </Container>

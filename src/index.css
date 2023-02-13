@@ -33,5 +33,5 @@ img {
 
 a,
 a:visited {
-  text-decoration: none;
+  text-decoration: none !important;
 }
