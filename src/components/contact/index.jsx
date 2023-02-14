@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Header from "../header";
 import "./index.scss";
@@ -7,7 +7,32 @@ import Main from "../main";
 import Member from "../member";
 import Member1 from "../../assets/images/jpg/abdullah.jpg";
 import Member2 from "../../assets/images/jpg/amr.jpg";
+import { Blocks } from "react-loader-spinner";
+import { useLoadingContext } from "react-router-loading";
 const Contact = () => {
+  const loadingContext = useLoadingContext();
+  const [state, setState] = useState();
+  const loadData = async () => {
+    //waiting one second
+    await new Promise((r) => setTimeout(r, 1000));
+
+    //return data
+    const data = "this is loaded data";
+    return data;
+  };
+
+  const loading = async () => {
+    //loading some data
+    const data = await loadData();
+    setState(data);
+
+    //call method to indicate that loading is done
+    loadingContext.done();
+  };
+
+  useEffect(() => {
+    loading();
+  }, []);
   return (
     <div id="contact">
       <Header

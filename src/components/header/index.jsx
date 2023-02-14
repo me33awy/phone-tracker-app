@@ -7,9 +7,10 @@ import "./index.scss";
 import { Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import Contact from "../contact";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import Home from "../home";
 import { HashLink } from "react-router-hash-link";
+
 function Header(props) {
   const navRef = useRef();
   const menuAnimate = useRef();
@@ -84,13 +85,13 @@ function Header(props) {
               </div>
             </button>
             <Nav className="me-auto" ref={navRef}>
-              <Nav.Link  onClick={clickOver} ref={clickLink}>
+              <Nav.Link onClick={clickOver} ref={clickLink}>
                 <HashLink smooth to="/#about">
                   {" "}
                   About app{" "}
                 </HashLink>
               </Nav.Link>
-              <Nav.Link href="#features" onClick={clickOver} ref={clickLink}>
+              <Nav.Link onClick={clickOver} ref={clickLink}>
                 <HashLink smooth to="/#features">
                   {" "}
                   Features{" "}
@@ -99,7 +100,7 @@ function Header(props) {
               <Nav.Link ref={clickLink}>
                 <Link to="/contact"> Contact</Link>
               </Nav.Link>
-              <Nav.Link href="#download" onClick={clickOver} ref={clickLink}>
+              <Nav.Link onClick={clickOver} ref={clickLink}>
                 <HashLink smooth to="/#download">
                   {" "}
                   Download the app{" "}
