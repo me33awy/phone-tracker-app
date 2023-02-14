@@ -4,8 +4,6 @@ import PhoneLogo from "../logo";
 import MobileMenu from "../mobile";
 import NavBar from "../navbar";
 import "./index.scss";
-import Logo from "../../assets/images/svg/logo.svg";
-import Logo__Alt from "../../assets/images/svg/logo-alt.svg";
 import { Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import Contact from "../contact";
@@ -76,17 +74,17 @@ function Header(props) {
   };
   return (
     <>
-      <header className={props.className} logo={Logo} ref={headerBackground}>
+      <header className={props.className} ref={headerBackground}>
         <Navbar>
           <Container className="headerContainer">
-            <PhoneLogo logo={Logo} />
-            <button ref={menuAnimate} className="mobile-menu">
+            <PhoneLogo logo={props.logo} />
+            <button id={props.mobile} ref={menuAnimate} className="mobile-menu">
               <div onClick={func}>
                 <span></span>
               </div>
             </button>
             <Nav className="me-auto" ref={navRef}>
-              <Nav.Link href="#about" onClick={clickOver} ref={clickLink}>
+              <Nav.Link  onClick={clickOver} ref={clickLink}>
                 <HashLink smooth to="/#about">
                   {" "}
                   About app{" "}
@@ -111,7 +109,7 @@ function Header(props) {
           </Container>
         </Navbar>
       </header>
-      <div ref={overLayVar} onClick={func} className="overlay"></div>
+      <div ref={overLayVar} onClick={func} className={props.name}></div>
     </>
   );
 }

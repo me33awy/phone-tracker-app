@@ -8,11 +8,12 @@ import Problems from "../problems";
 import Download from "../download";
 import Footer from "../footer";
 import Contact from "../contact";
+import Logo from "../../assets/images/svg/logo.svg";
 const Home = () => {
   return (
     <>
       <div id="home">
-        <Header />
+        <Header logo={Logo} name="overlay" />
         <Over />
         <Main />
         <About />

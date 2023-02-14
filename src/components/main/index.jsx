@@ -5,7 +5,7 @@ import Frame from "../../assets/images/png/Frame93.png";
 import DownloadButton from "../download-btn";
 const Main = () => {
   return (
-    <main>
+    <main className="main__home main">
       <Container>
         <Row>
           <Col xs={12} md={6}>

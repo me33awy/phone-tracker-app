@@ -1,0 +1,57 @@
+@use "../../App.scss";
+.team__member {
+  background-color: map-get(App.$colors, whiteColor);
+  padding: App.rem(12) 0;
+  display: grid;
+  align-items: center;
+  border-radius: App.rem(20);
+  place-items: center;
+  .picture {
+    width: App.rem(80);
+    height: App.rem(80);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .name {
+    margin-top: App.rem(5);
+    h4 {
+      background: linear-gradient(
+        to right,
+        map-get(App.$colors, gradient1),
+        map-get(App.$colors, gradient3)
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // font-size: map-get(App.$font-sizes-mobile, small);
+    }
+  }
+  .job__title {
+    margin-bottom: App.rem(24);
+  }
+  .contact__methods {
+    width: 100%;
+    justify-content: space-evenly;
+    //  gap: App.rem(24);
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: App.rem(5);
+      // width: App.rem(24);
+      // height: App.rem(24);
+      border-radius: App.rem(5);
+      box-shadow: App.rem(1.95) App.rem(1.95) App.rem(2.6) App.rem(0)
+        rgba($color: #000, $alpha: 0.15);
+      a {
+        img {
+          scale: 1.4;
+        }
+      }
+    }
+  }
+  #amr {
+    scale: 1.3;
+    transform: translatey(7px);
+  }
+}

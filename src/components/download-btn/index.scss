@@ -8,10 +8,9 @@
   font-weight: 600 !important;
   border: none !important;
   box-shadow: App.rem(2) App.rem(4) App.rem(20) App.rem(0)
-    map-get(App.$colors, blackColor);
+    rgba($color: #000, $alpha: 0.25);
   @include App.desktop {
     padding: App.rem(24) App.rem(48) !important;
     font-size: map-get(App.$font-sizes-desktop, small) !important;
   }
 }
-

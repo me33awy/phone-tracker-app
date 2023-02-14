@@ -16,3 +16,6 @@ header {
     }
   }
 }
+.header__alt {
+  background-color: map-get(App.$colors, slideColor) !important;
+}

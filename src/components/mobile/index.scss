@@ -29,7 +29,7 @@
         position: absolute;
         width: 100%;
         height: App.rem(1);
-        background-color: map-get(App.$colors, whiteColor);
+        background-color: inherit;
         top: -6px;
         // transform: translateY(-6px);
         left: 0;
@@ -39,7 +39,7 @@
         position: absolute;
         width: 100%;
         height: App.rem(1);
-        background-color: map-get(App.$colors, whiteColor);
+        background-color: inherit;
         top: 6px;
         // transform: translateY(6px);
         left: 0;
@@ -47,4 +47,14 @@
     }
   }
 }
-
+#mobile__contact {
+  div {
+    span {
+      background-color: map-get(App.$colors, blackColor);
+      &::before,
+      &::after {
+        background-color: map-get(App.$colors, blackColor) !important;
+      }
+    }
+  }
+}

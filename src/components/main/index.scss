@@ -1,5 +1,6 @@
 @use "../../App.scss";
-main {
+main,
+.main {
   // position: sticky;
   // z-index: 20;
   background-color: map-get(App.$colors, primary4);

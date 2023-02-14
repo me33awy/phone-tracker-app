@@ -1,4 +1,32 @@
+@use "../../App.scss";
 #contact {
-  background-color: #000;
-  height: 100vh;
+  background-color: map-get(App.$colors, slideColor);
+  .main__contact {
+    background-color: transparent;
+    padding: App.rem(64) 0;
+    .content {
+      h2 {
+        font-size: map-get(App.$font-sizes-mobile, h2);
+        background: linear-gradient(
+          to right,
+          map-get(App.$colors, gradient1),
+          map-get(App.$colors, gradient3)
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: App.rem(18);
+      }
+      p {
+        color: map-get(App.$colors, primary1);
+        opacity: 0.75;
+      }
+    }
+  }
+  .contact__grid {
+    .grid__layout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: App.rem(15);
+    }
+  }
 }

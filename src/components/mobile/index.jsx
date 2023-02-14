@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 
-function MobileMenu() {
+function MobileMenu(props) {
   return (
     <>
       <button className="mobile-menu">

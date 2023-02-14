@@ -21,7 +21,8 @@ $colors: (
   "gradient2": rgb(49, 246, 246),
   "gradient3": rgb(1, 76, 142),
   "whiteColor": rgb(255, 255, 255),
-  "blackColor": rgba(0, 0, 0, 0.25),
+  "blackColor": rgba(0, 0, 0),
+  "slideColor": rgb(246, 246, 246),
 );
 
 $font-sizes-desktop: (
@@ -93,10 +94,12 @@ $grid-breakpoints: (
       &::before {
         top: 0px !important;
         rotate: 45deg;
+        background-color: map-get($colors, whiteColor);
       }
       &::after {
         top: 0px !important;
         rotate: -45deg;
+        background-color: map-get($colors, whiteColor);
       }
     }
   }
