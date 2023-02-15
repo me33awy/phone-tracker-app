@@ -6,7 +6,7 @@ import Logo__Alt from "../../assets/images/svg/logo-alt.svg";
 import Main from "../main";
 import Member from "../member";
 import Member1 from "../../assets/images/jpg/abdullah.jpg";
-import Member2 from "../../assets/images/jpg/amr.jpg";
+import Member2 from "../../assets/images/jpg/amr.png";
 import Member3 from "../../assets/images/jpg/aya.jpg";
 import Member4 from "../../assets/images/jpg/sara.jpg";
 import Member5 from "../../assets/images/jpg/bothina.jpg";
