@@ -17,9 +17,39 @@ header {
   }
 }
 .header__alt {
-  background-color: map-get(App.$colors, slideColor) !important;
+  // background-color: transparent !important;
+  // position: static;
   justify-content: space-between;
+  @include App.desktop {
+  }
   .me-auto {
     margin: 0 !important;
+    a {
+      color: map-get(App.$colors, primary4);
+      &:hover {
+        a {
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+      a {
+        position: relative;
+        padding: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: App.rem(-8);
+          left: 0;
+          width: 0%;
+          height: App.rem(2);
+          background: linear-gradient(
+            to right,
+            map-get(App.$colors, gradient1),
+            map-get(App.$colors, gradient3)
+          );
+        }
+      }
+    }
   }
 }

@@ -5,9 +5,9 @@ import Logo__Alt from "../../assets/images/svg/logo-alt.svg";
 import NavBar from "../navbar";
 import "./index.scss";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div className="footer">
+    <div className="footer" id={props.id}>
       <Container>
         <div className="flex d-flex justify-content-center">
           <PhoneLogo className="footer__logo" logo={Logo__Alt} />

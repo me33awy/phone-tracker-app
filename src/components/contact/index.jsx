@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import Header from "../header";
 import "./index.scss";
@@ -33,7 +33,20 @@ const Contact = () => {
 
     loadData();
   }, []);
-
+  const [color, setColor] = useState();
+  const headerBackground = useRef();
+  function changeBackground() {
+    if (window.scrollY > 66) {
+      headerBackground.current.style.backgroundColor = "rgb(190, 155, 250)";
+      setColor(true);
+    } else {
+      headerBackground.current.style.backgroundColor = "transparent";
+      setColor(false);
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+  });
   if (loading) {
     return (
       <>
@@ -43,6 +56,7 @@ const Contact = () => {
             logo={Logo__Alt}
             mobile="mobile__contact"
             name="overlay__contact"
+            ref={headerBackground}
           />
           <div className="main__contact main">
             <Container>

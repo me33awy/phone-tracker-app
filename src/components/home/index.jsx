@@ -12,6 +12,7 @@ import Logo from "../../assets/images/svg/logo.svg";
 import { useLoadingContext } from "react-router-loading";
 import { useState, useEffect } from "react";
 import { InfinitySpin } from "react-loader-spinner";
+import { RotateLoader } from "react-spinners";
 const Home = () => {
   const [loading, setLoading] = useState(false);
 
@@ -44,7 +45,9 @@ const Home = () => {
   } else {
     return (
       <div className="loading d-flex align-items-center justify-content-center vh-100">
-        <InfinitySpin width="200" color="rgb(29, 155, 240)" />
+        {/* <InfinitySpin width="200" color="rgb(29, 155, 240)" /> */}
+        {/* <PacmanLoader color="rgb(29, 155, 240)" /> */}
+        <RotateLoader color="rgb(29, 155, 240)" />
       </div>
     );
   }

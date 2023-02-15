@@ -45,8 +45,12 @@ function Header(props) {
   const [background, setBackground] = useState(false);
   const changeBackground = () => {
     // console.log(window.scrollY);
-    if (window.scrollY >= 66) {
-      headerBackground.current.style.backgroundColor = "rgb(29, 155, 240)";
+    if (window.scrollY >= 44) {
+      if (headerBackground.current.classList.contains("header__alt")) {
+        headerBackground.current.style.backgroundColor = "rgb(246, 246, 246)";
+      } else {
+        headerBackground.current.style.backgroundColor = "rgb(29, 155, 240)";
+      }
       setBackground(true);
     } else {
       headerBackground.current.style.backgroundColor = "transparent";
