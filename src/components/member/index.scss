@@ -24,11 +24,16 @@
       );
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      // font-size: map-get(App.$font-sizes-mobile, small);
+      font-size: map-get(App.$font-sizes-mobile, h5 );
     }
   }
   .job__title {
     margin-bottom: App.rem(24);
+    h5 {
+      font-size: map-get(App.$font-sizes-mobile, small);
+      color: map-get(App.$colors, primary1);
+      opacity: 0.75;
+    }
   }
   .contact__methods {
     width: 100%;

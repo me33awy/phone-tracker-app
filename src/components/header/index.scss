@@ -18,4 +18,8 @@ header {
 }
 .header__alt {
   background-color: map-get(App.$colors, slideColor) !important;
+  justify-content: space-between;
+  .me-auto {
+    margin: 0 !important;
+  }
 }

@@ -11,44 +11,43 @@ import Contact from "../contact";
 import Logo from "../../assets/images/svg/logo.svg";
 import { useLoadingContext } from "react-router-loading";
 import { useState, useEffect } from "react";
+import { InfinitySpin } from "react-loader-spinner";
 const Home = () => {
-  const loadingContext = useLoadingContext();
-  const [state, setState] = useState();
-  const loadData = async () => {
-    //waiting one second
-    await new Promise((r) => setTimeout(r, 1000));
-
-    //return data
-    const data = "this is loaded data";
-    return data;
-  };
-
-  const loading = async () => {
-    //loading some data
-    const data = await loadData();
-    setState(data);
-
-    //call method to indicate that loading is done
-    loadingContext.done();
-  };
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    loading();
+    console.log(loading);
+    const loadData = async () => {
+      await new Promise((r) => setTimeout(r, 2000));
+      setLoading(!loading);
+    };
+    console.log(loading);
+
+    loadData();
   }, []);
-  return (
-    <>
-      <div id="home">
-        <Header logo={Logo} name="overlay" />
-        <Over />
-        <Main />
-        <About />
-        <Features />
-        <Problems />
-        <Download />
-        <Footer />
+
+  if (loading) {
+    return (
+      <>
+        <div id="home">
+          <Header logo={Logo} name="overlay" />
+          <Over />
+          <Main />
+          <About />
+          <Features />
+          <Problems />
+          <Download />
+          <Footer />
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <div className="loading d-flex align-items-center justify-content-center vh-100">
+        <InfinitySpin width="200" color="rgb(29, 155, 240)" />
       </div>
-    </>
-  );
+    );
+  }
 };
 
 export default Home;

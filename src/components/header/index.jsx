@@ -54,7 +54,7 @@ function Header(props) {
     }
   };
   useEffect(() => {
-    changeBackground();
+    // changeBackground();
     // adding the event when scroll change background
     window.addEventListener("scroll", changeBackground);
   });
