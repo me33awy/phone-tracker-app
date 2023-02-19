@@ -2,7 +2,7 @@
 
 # **Phone Tracking Application:**
 
-phone tracking application provided a solution to a problem that occurs continuously and often with many people.
+<a href="https://phone-tracker.surge.sh/">phone tracking</a> application provided a solution to a problem that occurs continuously and often with many people.
 nowadays, the usage of mobile has become a vital part of the day-to-day activities of people. We can refer to the current time as the era of Smartphones. Suppressing all other traditional communication purposes, smartphones are now at the peak of popularity in their usage of accessing the internet which includes mail access, social networking, mobile shopping, mobile banking, etc.
 
 ### Tools:
@@ -19,4 +19,3 @@ nowadays, the usage of mobile has become a vital part of the day-to-day activiti
 
 <a href="https://www.w3schools.com/html/"> HTML</a> | <a href="https://www.w3schools.com/css/"> CSS</a> | <a href="https://www.w3schools.com/js/"> JavaScript</a> | <a href="https://www.w3schools.com/react/"> ReactJS</a> | <a href="https://www.w3schools.com/sass/"> Scss</a> | <a href="https://www.w3schools.com/php/"> PHP</a> | <a href="https://www.w3schools.in/laravel"> Laravel</a> | <a href="https://www.w3schools.com/mysql/"> MySQL</a>
 
-<a href="https://phone-tracker.surge.sh/">website</a>
