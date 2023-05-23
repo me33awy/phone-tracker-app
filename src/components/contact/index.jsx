@@ -5,16 +5,6 @@ import "./index.scss";
 import Logo__Alt from "../../assets/images/svg/logo-alt.svg";
 import Main from "../main";
 import Member from "../member";
-import Member1 from "../../assets/images/jpg/abdullah.jpg";
-import Member2 from "../../assets/images/jpg/amr.png";
-import Member3 from "../../assets/images/jpg/aya.jpg";
-import Member4 from "../../assets/images/jpg/sara.jpg";
-import Member5 from "../../assets/images/jpg/bothina.jpg";
-import Member6 from "../../assets/images/jpg/nabih.jpg";
-import Member7 from "../../assets/images/jpg/tash.jpg";
-import Member8 from "../../assets/images/jpg/mostafa.jpg";
-import Member9 from "../../assets/images/jpg/kamal.jpg";
-import Member10 from "../../assets/images/jpg/mansy.jpg";
 import { Block } from "react-loader-spinner";
 import { useLoadingContext } from "react-router-loading";
 import { InfinitySpin } from "react-loader-spinner";
@@ -76,52 +66,52 @@ const Contact = () => {
             <Container>
               <div className="grid__layout">
                 <Member
-                  img={Member1}
+                  img="images/jpg/abdullah.jpg"
                   name="Abdullah Ismail"
                   job="Front end developer"
                 />
                 <Member
                   className="amr"
-                  img={Member2}
+                  img='images/jpg/amr.png'
                   name="Amr Mekkawy"
                   job="Front end developer"
                 />
                 <Member
-                  img={Member3}
+                  img='images/jpg/aya.jpg'
                   name="Aya Alshehawy"
                   job="Back end developer"
                 />
                 <Member
-                  img={Member4}
+                  img='images/jpg/sara.jpg'
                   name="Sara Shouman"
                   job="UI/UX Designer"
                 />
                 <Member
-                  img={Member5}
+                  img='images/jpg/bothina.jpg'
                   name="Bothina Zaki"
                   job="UI/UX Designer"
                 />
                 <Member
-                  img={Member6}
+                  img='images/jpg/nabih.jpg'
                   name="Mohamed Nabih"
                   job="Andriod developer"
                 />
                 <Member
-                  img={Member7}
+                  img='images/jpg/tash.jpg'
                   name="Mohamed Tash"
                   job="Andriod developer"
                 />
                 <Member
-                  img={Member8}
+                  img='images/jpg/mostafa.jpg'
                   name="Moamen mostafa"
                   job="Andriod developer"
                 />
                 <Member
-                  img={Member9}
+                  img='images/jpg/kamal.jpg'
                   name="Mohamed Kamal"
                   job="Andriod developer"
                 />
-                <Member img={Member10} name="Mohamed Elmansy" />
+                <Member img='images/jpg/mansy.jpg' name="Mohamed Elmansy" />
               </div>
             </Container>
           </div>

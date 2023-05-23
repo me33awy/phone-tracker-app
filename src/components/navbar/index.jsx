@@ -30,6 +30,9 @@ function NavBar(props) {
               Download the app{" "}
             </HashLink>
           </Nav.Link>
+          <Nav.Link>
+            <Link to="/form"> Message</Link>
+          </Nav.Link>
         </Nav>
       </div>
     </>

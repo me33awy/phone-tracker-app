@@ -1,8 +1,5 @@
 import React from "react";
 import "./index.scss";
-import Whatapp from "../../assets/images/svg/whatsapp.svg";
-import Gmail from "../../assets/images/svg/gmail.svg";
-import Linkedin from "../../assets/images/svg/linkedin.svg";
 const Member = (props) => {
   return (
     <div className="team__member">
@@ -18,17 +15,17 @@ const Member = (props) => {
       <ul className="contact__methods d-flex">
         <li>
           <a href="">
-            <img src={Whatapp} alt="whatsapp" />
+            <img src='images/svg/whatsapp.svg' alt="whatsapp" />
           </a>
         </li>
         <li>
           <a href="">
-            <img src={Linkedin} alt="linkedin" />
+            <img src='images/svg/linkedin.svg' alt="linkedin" />
           </a>
         </li>
         <li>
           <a href="">
-            <img src={Gmail} alt="gmail" />
+            <img src='images/svg/gmail.svg' alt="gmail" />
           </a>
         </li>
       </ul>

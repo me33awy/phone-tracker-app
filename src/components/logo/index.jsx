@@ -10,7 +10,7 @@ function PhoneLogo(props) {
       <Link to="/">
         <Navbar.Brand className={props.className}>
           <img
-            src={props.logo}
+            src='images/png/logo.png'
             className="d-inline-block align-top"
             alt="phone logo"
           />
