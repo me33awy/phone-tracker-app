@@ -1,0 +1,29 @@
+#how{
+		background-image:url("./bg.png");
+		background-size:contain;
+		background-position:top right;
+		background-repeat:no-repeat;
+		padding:40px
+}
+.how-logo {
+	width: 40px;
+	margin-bottom:10px;
+}
+.how-h1 {
+	background: linear-gradient(
+		to right,
+		rgb(29, 155, 240),
+		rgb(1, 76, 142)
+	);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.how-h2 {
+	background: linear-gradient(
+		to right,
+		rgb(29, 155, 240),
+		rgb(1, 76, 142)
+	);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

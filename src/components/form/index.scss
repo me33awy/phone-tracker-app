@@ -1,0 +1,79 @@
+@use "../../App.scss";
+#form {
+	padding: 20px;
+	min-height: 100vh;
+	background-image: url("../../assets/images/png/Frame95.png");
+	background-size: cover;
+	@media (min-width: 918px) {
+		background: none;
+		display: flex;
+		align-items: center;
+	}
+	.navbar-brand {
+		@media (min-width: 918px) {
+			display: none;
+		}
+	}
+	h1 {
+		margin: 80px;
+		@media (min-width: 918px) {
+			display: none;
+		}
+		font-size: 28px;
+		background: linear-gradient(
+			to right,
+			map-get(App.$colors, gradient1),
+			map-get(App.$colors, gradient3)
+		);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+	}
+	.flex {
+		display: flex;
+	}
+	.img {
+			display:none;
+			@media(min-width:918px){
+				display:block	
+			}
+		flex: 1;
+	}
+	form {
+		flex: 1;
+		display: grid;
+		place-items: center;
+		.inputs {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		div {
+			width: 100%;
+		}
+		input {
+			width: 100%;
+			padding: 15px 24px;
+			border: none;
+			outline: none;
+			background: #f3eeee;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		h2 {
+			text-align: center;
+			font-size: 14px;
+			margin: 20px 0;
+		}
+		input[type="textarea"] {
+			height: 6rem;
+		}
+		input[type="submit"] {
+			padding: 25px 20px;
+			width: 50%;
+			background: #529acb;
+			color: #fff;
+		}
+	}
+}

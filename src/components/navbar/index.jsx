@@ -31,7 +31,7 @@ function NavBar(props) {
             </HashLink>
           </Nav.Link>
           <Nav.Link>
-            <Link to="/form"> Message</Link>
+            <Link to="/form">Message</Link>
           </Nav.Link>
         </Nav>
       </div>
